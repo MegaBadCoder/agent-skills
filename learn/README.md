@@ -1,6 +1,6 @@
 # `/learn`
 
-Part of [agents](../) — vibe-coding skills for Claude Code.
+Part of [agents](../) — vibe-coding skills for Cursor, Claude Code, and Codex.
 
 **English** · [Русский](README.ru.md)
 
@@ -11,11 +11,10 @@ Part of [agents](../) — vibe-coding skills for Claude Code.
 ## Install
 
 ```bash
-mkdir -p ~/.claude/skills/learn
-cp SKILL.md ~/.claude/skills/learn/SKILL.md
+npx skills add MegaBadCoder/agent-skills --skill learn -g -a claude-code -a cursor -a codex -y
 ```
 
-Global — all projects. Local — `.claude/skills/learn/` in repo. Restart once if `skills/` is new.
+Or manually — copy `../skills/learn/SKILL.md` to `~/.claude/skills/learn/`, `~/.cursor/skills/learn/`, and `~/.codex/skills/learn/`.
 
 ---
 
@@ -53,4 +52,4 @@ Modifiers: `-t <topic/paths>`, `-f <focus>`, `-n <count>`.
 |---|---|
 | English | [README.en.md](README.en.md) |
 | Русский | [README.ru.md](README.ru.md) |
-| Source | [SKILL.md](SKILL.md) |
+| Source | [SKILL.md](../skills/learn/SKILL.md) |

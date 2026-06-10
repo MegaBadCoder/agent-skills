@@ -2,7 +2,7 @@
 
 [English](../README.md) · **Русский**
 
-> Набор скиллов для Claude Code под **вайбкодинг** — быстро шипить с агентом и при этом понимать, что именно построили.
+> Набор скиллов для агентов под **вайбкодинг** — Cursor, Claude Code, Codex и др. Быстро шипить с агентом и при этом понимать, что именно построили.
 
 Вайбкодинг ломается, когда нужно дебажить, расширять или защищать код, который писал не ты. Эти скиллы закрывают разрыв: автоматизируют рутину работы с агентом, не превращая тебя в пассивного ревьюера.
 
@@ -18,21 +18,25 @@
 
 ---
 
-## Установка любого скилла
+## Установка
+
+Через [skills CLI](https://github.com/vercel-labs/skills):
 
 ```bash
-# глобально — все проекты (рекомендуется)
-mkdir -p ~/.claude/skills/<skill-name>
-cp <skill-name>/SKILL.md ~/.claude/skills/<skill-name>/SKILL.md
-
-# локально — поделиться с командой через репо
-mkdir -p .claude/skills/<skill-name>
-cp <skill-name>/SKILL.md .claude/skills/<skill-name>/SKILL.md
+npx skills add MegaBadCoder/agent-skills --list
+npx skills add MegaBadCoder/agent-skills --skill learn -g -a claude-code -a cursor -a codex -y
 ```
 
-Перезапустите Claude Code один раз, если `~/.claude/skills/` раньше не существовало. Дальнейшие правки `SKILL.md` применяются на лету.
+Вручную:
 
-Переименовать команду — переименовать папку: `mv learn изучи` → `/изучи`.
+```bash
+for dir in ~/.claude/skills ~/.cursor/skills ~/.codex/skills; do
+  mkdir -p "$dir/learn"
+  cp skills/learn/SKILL.md "$dir/learn/SKILL.md"
+done
+```
+
+Перезапустите агента один раз, если папка `skills/` раньше не существовала.
 
 ---
 
@@ -40,12 +44,8 @@ cp <skill-name>/SKILL.md .claude/skills/<skill-name>/SKILL.md
 
 ```
 agents/
-├── README.md          # English
-├── i18n/
-│   └── README.ru.md   # этот файл
-└── learn/
-    ├── SKILL.md
-    ├── README.md      # краткий обзор
-    ├── README.en.md   # полная документация (EN)
-    └── README.ru.md   # полная документация (RU)
+├── README.md
+├── i18n/README.ru.md
+├── skills/learn/SKILL.md
+└── learn/             # документация
 ```

@@ -1,8 +1,8 @@
-# `/learn` — deep code understanding skill for Claude Code
+# `/learn` — deep code understanding skill for Cursor, Claude Code, and Codex
 
 **English** | [Русский](README.ru.md)
 
-A Socratic teacher inside Claude Code (or any agent you wire it into). Its job is not to explain code, but to **verify you actually understand it**: the problem, the solution, the architecture, and the consequences. Understanding is proven through demonstration (restatements, quizzes, exercises) — not through "got it". Progress persists across sessions in `.learning/` checklists.
+A Socratic teacher inside Cursor, Claude Code, Codex, or any agent you wire it into. Its job is not to explain code, but to **verify you actually understand it**: the problem, the solution, the architecture, and the consequences. Understanding is proven through demonstration (restatements, quizzes, exercises) — not through "got it". Progress persists across sessions in `.learning/` checklists.
 
 Why it exists: when an agent writes most of your code, it's easy to own a system you don't understand. This skill turns every session (or any existing code) into study material — and won't let you go until the understanding is yours.
 
@@ -11,14 +11,19 @@ Why it exists: when an agent writes most of your code, it's easy to own a system
 ## Installation
 
 ```bash
-mkdir -p ~/.claude/skills/learn
-cp SKILL.md ~/.claude/skills/learn/SKILL.md
+npx skills add MegaBadCoder/agent-skills --skill learn -g -a claude-code -a cursor -a codex -y
 ```
 
-- **Global** (`~/.claude/skills/learn/`) — available in all projects. Recommended.
-- **Local** (`.claude/skills/learn/` in the repo) — this project only; commit and share with the team.
+Or manually:
 
-If `skills/` didn't exist before — restart Claude Code once. Further edits to `SKILL.md` are picked up live, no restart needed.
+```bash
+for dir in ~/.claude/skills ~/.cursor/skills ~/.codex/skills; do
+  mkdir -p "$dir/learn"
+  cp skills/learn/SKILL.md "$dir/learn/SKILL.md"
+done
+```
+
+Global — all projects. Local — `.claude/skills/learn/`, `.cursor/skills/learn/`, or `.codex/skills/learn/` in repo. Restart the agent once if `skills/` didn't exist before.
 
 Want a different command name? The name comes from the **folder**, not the file:
 
