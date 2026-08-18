@@ -1,0 +1,13 @@
+{
+  "name": "agent-skills",
+  "owner": {
+    "name": "MegaBadCoder"
+  },
+  "plugins": [
+    {
+      "name": "agent-skills",
+      "description": "Skills for staying in control of code an agent wrote: explanation ladder (eli5 / eli14 / eli-intern), Socratic verification (learn), and ceremony-free small fixes (quickfix)",
+      "source": "./"
+    }
+  ]
+}
