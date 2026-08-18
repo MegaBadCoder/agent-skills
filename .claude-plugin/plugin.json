@@ -1,0 +1,16 @@
+{
+  "name": "agent-skills",
+  "version": "0.1.0",
+  "description": "Skills for staying in control of code an agent wrote: explain it at the right level, verify you understand it, fix small things without ceremony",
+  "author": {
+    "name": "MegaBadCoder"
+  },
+  "keywords": [
+    "skills",
+    "explanation",
+    "learning",
+    "onboarding",
+    "debugging",
+    "vibe-coding"
+  ]
+}
