@@ -8,6 +8,11 @@
       "name": "agent-skills",
       "description": "Skills for staying in control of code an agent wrote: explanation ladder (eli5 / eli14 / eli-intern), Socratic verification (learn), and ceremony-free small fixes (quickfix)",
       "source": "./"
+    },
+    {
+      "name": "ultrapack-plus",
+      "description": "Redistribution of ultrapack by Boris Tseitlin (WTFPL): design → plan → execute → verify → review, plus attack-loop and job-guardian. Not original work — see plugins/ultrapack-plus/NOTICE.md",
+      "source": "./plugins/ultrapack-plus"
     }
   ]
 }

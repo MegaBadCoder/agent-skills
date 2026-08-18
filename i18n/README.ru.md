@@ -40,6 +40,16 @@ npx skills add MegaBadCoder/agent-skills --skill learn -g -a claude-code -a curs
 /plugin install agent-skills@agent-skills
 ```
 
+В том же маркетплейсе лежит **`ultrapack-plus`** — зафиксированная копия
+[ultrapack](https://github.com/btseytlin/ultrapack) Бориса Цейтлина (WTFPL), того самого
+процессного набора, рядом с которым живут наши скиллы. Это не наша работа, подробности в
+[NOTICE](../plugins/ultrapack-plus/NOTICE.md). Если нужен именно ultrapack — ставьте
+[у автора](https://github.com/btseytlin/ultrapack), там приходят обновления, а эта копия их не тянет.
+
+```
+/plugin install ultrapack-plus@agent-skills
+```
+
 Вручную:
 
 ```bash

@@ -1,0 +1,19 @@
+{
+  "name": "ultrapack-plus",
+  "version": "0.1.0",
+  "description": "Redistribution of ultrapack by Boris Tseitlin (WTFPL) — spec-driven, git-centered development workflow: design → plan → execute → verify → review, plus attack-loop and job-guardian",
+  "author": {
+    "name": "Boris Tseitlin",
+    "email": "iambtseytlin@gmail.com"
+  },
+  "homepage": "https://github.com/btseytlin/ultrapack",
+  "license": "WTFPL",
+  "keywords": [
+    "skills",
+    "workflow",
+    "planning",
+    "tdd",
+    "code-review",
+    "debugging"
+  ]
+}

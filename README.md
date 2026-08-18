@@ -43,6 +43,17 @@ As a Claude Code plugin — installs every skill at once and keeps them updatabl
 /plugin install agent-skills@agent-skills
 ```
 
+The same marketplace also carries **`ultrapack-plus`** — a pinned redistribution of
+[ultrapack](https://github.com/btseytlin/ultrapack) by Boris Tseitlin (WTFPL), the
+spec-driven workflow this repo's own skills sit alongside. Not original work; see
+[NOTICE](plugins/ultrapack-plus/NOTICE.md). If you only want ultrapack, install it
+[from the author](https://github.com/btseytlin/ultrapack) — that tracks updates, this
+copy does not.
+
+```
+/plugin install ultrapack-plus@agent-skills
+```
+
 Manual copy:
 
 ```bash
